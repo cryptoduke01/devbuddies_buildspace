@@ -31,14 +31,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">newsletter</h4>
             <p className="text-sm text-gray-400 mb-2">stay updated with our latest events and opportunities.</p>
             <form className="flex">
-              <input 
-                type="email" 
-                placeholder="enter your email" 
-                className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#F1AEDA]"
-              />
               <button 
                 type="submit" 
-                className="bg-[#F1AEDA] text-black px-4 py-2 rounded-r-md hover:bg-[#d690bf] transition-colors"
+                className="bg-[#F1AEDA] text-black px-4 py-2 rounded-full hover:bg-[#d690bf] transition-colors"
               >
                 subscribe
               </button>

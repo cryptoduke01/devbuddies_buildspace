@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-sm hover:text-[#F1AEDA]">twitter</a></li>
               <li><a href="#" className="text-sm hover:text-[#F1AEDA]">linkedIn</a></li>
-              <li><a href="#" className="text-sm hover:text-[#F1AEDA]">youtube</a></li>
+              <li><a href="#" className="text-sm hover:text-[#181316]">youtube</a></li>
               <li><a href="#" className="text-sm hover:text-[#F1AEDA]">discord</a></li>
             </ul>
           </div>

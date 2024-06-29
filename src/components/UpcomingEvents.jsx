@@ -1,4 +1,4 @@
-
+import speaker from '../assets/presh.jpg'
 const EventCard = ({ title, date, time, venue, icon, speakers }) => (
   <div className="bg-[#121212] rounded-lg overflow-hidden p-6">
     <div className="flex justify-between items-center mb-2">
@@ -46,7 +46,7 @@ const UpcomingEvents = () => {
       venue: "bay arena",
       icon: "/src/assets/favicon.png",
       speakers: [
-        { name: "akachukwu egboluche", role: "Community  Manager", image: "/src/assets/comm-manager.jpeg" },
+        { name: "akachukwu egboluche", role: "Community  Manager", image: {speaker} },
         { name: "precious kayili", role: "CEO Learnspaces", image: "/src/assets/presh.jpg" }
       ]
     },

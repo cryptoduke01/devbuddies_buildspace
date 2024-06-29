@@ -1,7 +1,6 @@
-// components/Grid.js
 const Grid = () => {
   return (
-    <div className="grid grid-cols-3 gap-2 w-96 h-96">
+    <div className="grid grid-cols-3 gap-2 w-full max-w-[24rem] mx-auto aspect-square">
       <div className="bg-[#44967E] rounded-tl-3xl rounded-bl-3xl"></div>
       <div className="bg-[#DFDFDF]"></div>
       <div className="bg-[#a58d9c]"></div>

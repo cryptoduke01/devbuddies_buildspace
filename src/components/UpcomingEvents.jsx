@@ -1,10 +1,16 @@
+import assets from "../assets";
+import { events } from "../constants";
+
 const EventCard = ({ title, date, time, venue, icon, speakers }) => (
   <div className="bg-[#121212] rounded-lg overflow-hidden p-6">
     <div className="flex justify-between items-center mb-2">
       <h2 className="text-xl font-bold text-white">{title}</h2>
       <img src={icon} alt={title} className="w-6 h-6" />
     </div>
-    <p className="text-xs text-gray-400 mb-4">  {`${date} • ${time} • @${venue}`}</p>
+    <p className="text-xs text-gray-400 mb-4">
+      {" "}
+      {`${date} • ${time} • @${venue}`}
+    </p>
 
     <div className="mb-4">
       <h3 className="text-1xl font-bold text-gray-400 mb-3">speakers</h3>
@@ -12,9 +18,15 @@ const EventCard = ({ title, date, time, venue, icon, speakers }) => (
         {speakers.map((speaker, index) => (
           <div key={index} className="flex items-center justify-between">
             <div className="flex items-center">
-              <img src={speaker.image} alt={speaker.name} className="w-16 h-16 rounded-full mr-4" />
+              <img
+                src={speaker.image}
+                alt={speaker.name}
+                className="w-16 h-16 rounded-full mr-4"
+              />
               <div>
-                <p className="text-sm font-semibold text-white">{speaker.name}</p>
+                <p className="text-sm font-semibold text-white">
+                  {speaker.name}
+                </p>
                 <p className="text-xs text-gray-400">{speaker.role}</p>
               </div>
             </div>
@@ -37,44 +49,7 @@ const EventCard = ({ title, date, time, venue, icon, speakers }) => (
   </div>
 );
 
-
 const UpcomingEvents = () => {
-  const events = [
-    {
-      title: "dribblers meetup",
-      date: "tue, 2nd july",
-      time: "2pm",
-      venue: "bay arena",
-      icon: "/src/assets/favicon.png",
-      speakers: [
-        { name: "akachukwu egboluche", role: "Community  Manager", image: "/src/assets/comm-manager.jpeg" },
-        { name: "precious kayili", role: "CEO Learnspaces", image: "/src/assets/presh.jpg" }
-      ]
-    },
-    {
-      title: "backend workshop",
-      date: "tue, 2nd july",
-      time: "10am",
-      venue: "tech hub",
-      icon: "/src/assets/favicon.png",
-      speakers: [
-        { name: "precious kayili", role: "CEO Learnspaces", image: "/src/assets/presh.jpg" },
-        { name: "chris iloka", role: "Senior UX Researcher", image: "/src/assets/comm-manager.jpeg" }
-      ]
-    },
-    {
-      title: "web dev symposium",
-      date: "tue, 2nd july",
-      time: "1pm",
-      venue: "ode center",
-      icon: "/src/assets/favicon.png",
-      speakers: [
-        { name: "akachukwu egboluche", role: "Frontend Lead at DevBuddies", image: "/src/assets/comm-manager.jpeg" },
-        { name: "chris iloka", role: "Senior UX Researcher", image: "/src/assets/presh.jpg" }
-      ]
-    }
-  ];
-
   return (
     <div className="min-h-screen px-4 sm:px-6 lg:px-8 py-12 bg-black">
       <div className="max-w-7xl mx-auto">

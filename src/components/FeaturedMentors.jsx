@@ -1,4 +1,4 @@
-import React from 'react';
+import { mentors } from "../constants";
 
 const MentorCard = ({ name, expertise, image }) => (
   <div className="bg-[#121212] rounded-lg overflow-hidden p-6">
@@ -24,15 +24,6 @@ const MentorCard = ({ name, expertise, image }) => (
 );
 
 const FeaturedMentors = () => {
-  const mentors = [
-    { name: "akachukwu egboluche", expertise: "React & Node.js", image: "/src/assets/comm-manager.jpeg" },
-    { name: "precious kayili", expertise: "Python & Machine Learning", image: "/src/assets/presh.jpg" },
-    { name: "chris iloka", expertise: "UX Design & Frontend", image: "src/assets/comm-manager.jpeg" },
-    { name: "salem kinrin", expertise: "DevOps & Cloud", image: "/src/assets/presh.jpg" },
-    { name: "kim tsok", expertise: "Mobile Development", image: "src/assets/comm-manager.jpeg" },
-    { name: "james okoroafor", expertise: "Mobile Development", image: "/src/assets/presh.jpg" },
-  ];
-
   return (
     <section className="min-h-screen px-4 sm:px-6 lg:px-8 py-12 bg-black">
       <div className="max-w-7xl mx-auto">

@@ -1,4 +1,4 @@
-import React from 'react';
+import { testimonials } from "../constants";
 
 const TestimonialCard = ({ name, role, image, quote }) => (
   <div className="bg-[#121212] rounded-lg overflow-hidden p-6">
@@ -14,27 +14,6 @@ const TestimonialCard = ({ name, role, image, quote }) => (
 );
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "John Doe",
-      role: "Frontend Developer",
-      image: "/src/assets/presh.jpg",
-      quote: "This platform has been instrumental in my growth as a developer. The mentors are top-notch!"
-    },
-    {
-      name: "Jane Smith",
-      role: "UX Designer",
-      image: "/src/assets/presh.jpg",
-      quote: "I've learned so much from the events and workshops. It's an amazing community for tech enthusiasts."
-    },
-    {
-      name: "Mike Johnson",
-      role: "Data Scientist",
-      image: "/src/assets/presh.jpg",
-      quote: "The mentorship program here is unparalleled. It has accelerated my career growth significantly."
-    },
-  ];
-
   return (
     <section className="min-h-screen px-4 sm:px-6 lg:px-8 py-12 bg-black">
       <div className="max-w-7xl mx-auto">

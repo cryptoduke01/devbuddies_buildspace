@@ -41,10 +41,11 @@ const Navbar = () => {
         }`}
       >
         <div className="py-4 space-y-2">
-          <a href="#" className="block text-white hover:text-gray-300 py-2">community</a>
           <a href="#" className="block text-white hover:text-gray-300 py-2">events</a>
+          <a href="#" className="block text-white hover:text-gray-300 py-2">gallery</a>
           <a href="#" className="block text-white hover:text-gray-300 py-2">mentors</a>
           <a href="#" className="block text-white hover:text-gray-300 py-2">stories</a>
+          <a href="#" className="block text-white hover:text-gray-300 py-2">testimonials</a>
           <button className="block w-full text-left text-white px-4 py-2 rounded hover:text-gray-300">rsvp now</button>
           <button className="block w-full text-center px-5 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors text-white">membership</button>
         </div>

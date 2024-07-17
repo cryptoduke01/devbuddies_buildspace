@@ -2,8 +2,12 @@ import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
 import UpcomingEvents from './components/UpcomingEvents'
 import FeaturedMentors from "./components/FeaturedMentors"
-import Footer from "./components/Footer"
 import PartnerShowcase from "./components/PartnerShowcase"
+import Testimonials from "./components/Testimonials"
+import Footer from "./components/Footer"
+import FAQ from "./components/FAQ"
+import GallerySection from "./components/GallerySection"
+
 
 const App = () => {
   return (
@@ -14,7 +18,10 @@ const App = () => {
       </main>
       <UpcomingEvents />
       <FeaturedMentors />
+      <Testimonials />
+      <FAQ />
       <PartnerShowcase />
+      <GallerySection />
     <Footer />
     </div>
   )

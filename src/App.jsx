@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
-import UpcomingEvents from './components/UpcomingEvents'
+import UpcomingEvents from './components/About'
 import FeaturedMentors from "./components/FeaturedMentors"
 import PartnerShowcase from "./components/PartnerShowcase"
 import Testimonials from "./components/Testimonials"

@@ -13,12 +13,12 @@ const Hero = () => {
           <Grid />
         </div>
         <div className="w-full lg:w-6/12">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-            <span className='text-[#F1AEDA]'>community based </span>
-            coding mentorship for<span className="text-[#44967E]"> friends and locals</span>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+            <span className='text-[#83B71B]'>establishing God's kingdom </span>
+            <span className='text-[#EFFCF1]'>in the </span><span className="text-[#D9DB2A]"> web3 community</span>
           </h1>
           <p className="mb-10 text-base sm:text-lg text-white">
-            dev-buddies lets you have casual coding sessions with friends to learn and solve problems together. share knowledge and support each other's journey in a relaxed social setting.
+            regenerates is a community of believers with the mandate to establish the kingdom of GOD in the web3 space
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
             <button 

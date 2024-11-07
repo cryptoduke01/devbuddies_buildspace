@@ -25,13 +25,13 @@ const Hero = () => {
               className="px-8 py-3 bg-white text-black rounded-full font-normal hover:bg-gray-200 transition-colors"
               onClick={() => openZohoForm('https://forms.zohopublic.eu/devbuddies/form/RSVPForm/formperma/wJMuaDTdp5_ThVPBmMQmmrssyU3wXnXGCxs8y2lO7Ok')}
             >
-              rsvp now
+              join community
             </button>
             <button className="px-6 py-3 text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
               <svg className="w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
               </svg>
-              watch highlights
+              resources
             </button>
           </div>
         </div>

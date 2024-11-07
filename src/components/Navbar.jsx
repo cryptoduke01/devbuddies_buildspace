@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             <div className="text-xl text-white font-semibold flex items-center">
               <img
-                src="/src/assets/regen.jpg"
+                src="/images/regen.jpg"
                 alt="Regenerates Logo"
                 className="w-8 h-8 mr-2 rounded-full"
               />

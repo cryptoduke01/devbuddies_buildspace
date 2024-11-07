@@ -5,7 +5,7 @@ const AboutSection = () => {
     <div className="min-h-screen px-4 sm:px-6 lg:px-6 py-8 bg-black">
       {/* Text Section */}
       <div className="lg:w-2/3 mx-auto bg-[#121212] p-6 text-gray-400 flex flex-col justify-center">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#EFFCF1] mb-6">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#EFFCF1] mb-6 text-center">
           about <span className="text-[#83B71B]"> the regenerates</span>
         </h1>
         <p className="mb-4">

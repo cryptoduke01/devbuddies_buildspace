@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
 import UpcomingEvents from './components/About'
-import FeaturedMentors from "./components/FeaturedMentors"
 import PartnerShowcase from "./components/PartnerShowcase"
 import Testimonials from "./components/Testimonials"
 import Footer from "./components/Footer"
 import FAQ from "./components/FAQ"
 import GallerySection from "./components/GallerySection"
+import LeadershipSection from "./components/LeadershipSection"
 
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         <Hero />
       </main>
       <UpcomingEvents />
-      <FeaturedMentors />
+      <LeadershipSection />
       <Testimonials />
       <FAQ />
       <PartnerShowcase />

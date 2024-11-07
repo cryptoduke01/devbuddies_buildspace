@@ -22,35 +22,35 @@ const Grid = () => {
       <div className="grid grid-cols-3 gap-4 aspect-square relative z-10">
         {/* First row */}
         <div className="bg-[#83B71B] rounded-full hover:opacity-80 transition-opacity cursor-pointer flex items-center justify-center">
-          <img src="/src/assets/cross.jpg" alt="Blockchain Icon" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/cross.jpg" alt="Blockchain Icon" className="w-2/3 h-2/3 rounded-full" />
         </div>
         <div className="bg-[#EFFCF1] rounded-full flex items-center justify-center">
-          <img src="/src/assets/crypto.jpg" alt="Crypto Symbol" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/crypto.jpg" alt="Crypto Symbol" className="w-2/3 h-2/3 rounded-full" />
         </div>
         <div className="bg-[#D9DB2A] rounded-full hover:opacity-80 transition-opacity cursor-pointer flex items-center justify-center">
-          <img src="/src/assets/community.jpg" alt="Community Icon" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/community.jpg" alt="Community Icon" className="w-2/3 h-2/3 rounded-full" />
         </div>
         
         {/* Middle row */}
         <div className="bg-[#EFFCF1] rounded-full flex items-center justify-center">
-          <img src="/src/assets/prayer.jpg" alt="Regeneration Icon" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/prayer.jpg" alt="Regeneration Icon" className="w-2/3 h-2/3 rounded-full" />
         </div>
         <div className="bg-[#83B71B] rounded-full relative flex items-center justify-center">
-          <img src="/src/assets/regen.jpg" alt="Faith Icon" className="w-2/3 h-2/3 rounded-full" /> {/* Center box */}
+          <img src="/images/regen.jpg" alt="Faith Icon" className="w-2/3 h-2/3 rounded-full" /> {/* Center box */}
         </div>
         <div className="bg-[#EFFCF1] rounded-full flex items-center justify-center">
-          <img src="/src/assets/dollars.jpg" alt="Connection Icon" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/dollars.jpg" alt="Connection Icon" className="w-2/3 h-2/3 rounded-full" />
         </div>
         
         {/* Bottom row */}
         <div className="bg-[#83B71B] rounded-full hover:opacity-80 transition-opacity cursor-pointer flex items-center justify-center">
-          <img src="/src/assets/bible.jpg" alt="Transformation Icon" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/bible.jpg" alt="Transformation Icon" className="w-2/3 h-2/3 rounded-full" />
         </div>
         <div className="bg-[#EFFCF1] rounded-full flex items-center justify-center">
-          <img src="/src/assets/love.jpg" alt="Abstract Icon" className="w-2/3 h-2/3 rounded-full" />
+          <img src="/images/love.jpg" alt="Abstract Icon" className="w-2/3 h-2/3 rounded-full" />
         </div>
         <div className="bg-[#D9DB2A] rounded-full hover:opacity-80 transition-opacity cursor-pointer flex items-center justify-center">
-          <img src="/src/assets/blockchain.jpg" alt="Symbolic Icon" className="w-2/3 h-2/3 rounded-full"/>
+          <img src="/images/blockchain.jpg" alt="Symbolic Icon" className="w-2/3 h-2/3 rounded-full"/>
         </div>
       </div>
     </div>

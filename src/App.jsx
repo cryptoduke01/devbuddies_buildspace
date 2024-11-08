@@ -1,12 +1,10 @@
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
 import UpcomingEvents from './components/About'
-import PartnerShowcase from "./components/PartnerShowcase"
-import Testimonials from "./components/Testimonials"
 import Footer from "./components/Footer"
-import FAQ from "./components/FAQ"
-import GallerySection from "./components/GallerySection"
 import LeadershipSection from "./components/LeadershipSection"
+import EventsSection from "./components/EventsSection"
+import StoriesSection from "./components/StoriesSection"
 
 
 const App = () => {
@@ -18,11 +16,9 @@ const App = () => {
       </main>
       <UpcomingEvents />
       <LeadershipSection />
-      <Testimonials />
-      <FAQ />
-      <PartnerShowcase />
-      <GallerySection />
-    <Footer />
+      <EventsSection />
+      <StoriesSection />
+      <Footer />
     </div>
   )
 }

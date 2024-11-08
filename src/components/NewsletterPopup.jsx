@@ -21,13 +21,13 @@ const NewsletterPopup = ({ onClose }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="enter your email"
-            className="w-full px-4 py-2 rounded-md bg-[#2A2A2A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F1AEDA]"
+            className="w-full px-4 py-2 rounded-md bg-[#2A2A2A] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#6b9e16]"
             required
           />
           <div className="flex justify-between">
             <button
               type="submit"
-              className="bg-[#F1AEDA] text-black px-6 py-2 rounded-full hover:bg-[#d690bf] transition-colors"
+              className="bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black px-4 py-2 rounded-full hover:from-[#6b9e16] hover:to-[#b8b92e] transition-all duration-300"
             >
               subscribe
             </button>

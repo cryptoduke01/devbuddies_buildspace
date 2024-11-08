@@ -37,7 +37,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div ref={sectionRef} className="bg-black pt-4 pb-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div ref={sectionRef} id='about-section' className="bg-black pt-4 pb-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background Gradient Effects - Similar to Leadership Section */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-green-500/10 rounded-md filter blur-1xl"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-yellow-500/10 rounded-md filter blur-1xl"></div>

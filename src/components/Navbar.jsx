@@ -86,10 +86,10 @@ const Navbar = () => {
               </motion.div>
 
               <div className="hidden md:flex space-x-8">
-                {['community', 'about', 'events', 'stories'].map((item) => (
+                {['about', 'community', 'events', 'stories'].map((item) => (
                   <motion.a
                     key={item}
-                    href="#"
+                    href={`#${item}-section`}
                     variants={linkVariants}
                     whileHover="hover"
                     className="text-white hover:text-[#83B71B] transition-colors relative group"

@@ -5,11 +5,12 @@ import Grid from './Grid';
 const Hero = () => {
   const { scrollY } = useScroll();
   
-  // Parallax effects for background elements
-  const leftBgY = useTransform(scrollY, [0, 500], [0, -150]);
-  const rightBgY = useTransform(scrollY, [0, 500], [0, 150]);
-  const contentOpacity = useTransform(scrollY, [0, 300], [1, 0]);
-  const scale = useTransform(scrollY, [0, 300], [1, 0.9]);
+  // Reduced parallax effects for background elements
+  const leftBgY = useTransform(scrollY, [0, 1000], [0, -50]);  // Reduced from -150 to -50
+  const rightBgY = useTransform(scrollY, [0, 1000], [0, 50]);  // Reduced from 150 to 50
+  // Slower fade out and scale reduction over a longer scroll distance
+  const contentOpacity = useTransform(scrollY, [0, 500], [1, 0.8]);  // Less opacity change
+  const scale = useTransform(scrollY, [0, 500], [1, 0.95]);  // Less scale reduction
 
   const openZohoForm = (url) => {
     window.open(url, '_blank');
@@ -103,7 +104,7 @@ const Hero = () => {
                   variants={wordHoverVariants}
                   whileHover="hover"
                 >
-                  establishing God's kingdom{" "}
+                  Establishing God's Kingdom{" "}
                 </motion.span>
                 <span className="text-[#EFFCF1]">in the </span>
                 <motion.span 
@@ -111,7 +112,7 @@ const Hero = () => {
                   variants={wordHoverVariants}
                   whileHover="hover"
                 >
-                  web3 community
+                  Web3 Community
                 </motion.span>
               </motion.h1>
 

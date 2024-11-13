@@ -33,6 +33,7 @@ const NewsletterPopup = ({ onClose }) => {
             </button>
             <button
               type="button"
+              cursor="pointer"
               onClick={onClose}
               className="text-gray-400 hover:text-white transition-colors"
             >

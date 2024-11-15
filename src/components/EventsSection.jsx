@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 const EventsSection = () => {
   const events = [
     {
-      title: "gm with Jesus",
-      date: "daily",
-      location: "twitter spaces",
+      title: "GM With Jesus",
+      date: "Daily",
+      location: "Twitter Spaces",
       description: "Dive into the future of Web3 technology with leaders and innovators.",
       image: "/images/vision.jpeg",
     },
     {
-      title: "weekly prayer meeting",
-      date: "wednesdays",
-      location: "whatsapp group",
+      title: "Weekly Prayer Meeting",
+      date: "Wednesdays",
+      location: "Whatsapp Group",
       description: "Interactive workshop focusing on community growth and engagement.",
       image: "/images/vision.jpeg",
     },
     {
-      title: "God's role in your web3 journey",
-      date: "monthly",
-      location: "twitter spaces",
+      title: "God's Role in your Web3 Journey",
+      date: "Monthly",
+      location: "Twitter Spaces",
       description: "Learn how to lead and empower others in the evolving web landscape.",
       image: "/images/vision.jpeg",
     },
@@ -82,10 +82,10 @@ const EventsSection = () => {
                 {/* Event Details */}
                 <div className="text-sm text-gray-300 flex justify-between items-center">
                   <span>
-                    <span className="font-semibold text-[#83B71B]">date:</span> {event.date}
+                    <span className="font-semibold text-[#83B71B]">Date:</span> {event.date}
                   </span>
                   <span>
-                    <span className="font-semibold text-[#83B71B]">location:</span> {event.location}
+                    <span className="font-semibold text-[#83B71B]">Location:</span> {event.location}
                   </span>
                 </div>
               </div>

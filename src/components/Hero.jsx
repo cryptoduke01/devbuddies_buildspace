@@ -16,7 +16,7 @@ const Hero = () => {
   const handleCloseModal = () => setModalOpen(false);
   const handleAgreeAndJoin = () => {
     if (isAgreed) {
-      window.location.href = "/community"; // Replace with your target URL
+      window.open("https://forms.gle/TGyRHVCBYwovHvhd7", "_blank"); // Opens the Google Form in a new tab
     }
   };
 
@@ -117,13 +117,25 @@ const Hero = () => {
             </button>
             <h2 className="text-xl font-bold text-[#83B71B] mb-4">Community Rules</h2>
             <div className="h-40 overflow-y-scroll mb-4 text-sm text-gray-300">
-              <p>1. Be respectful to all members.</p>
-              <p>2. No spamming or advertisements.</p>
-              <p>3. Maintain a positive environment.</p>
-              <p>4. Follow the community guidelines.</p>
-              <p>5. Enjoy and contribute meaningfully!</p>
-              <p>6. No hate speech or abusive language.</p>
-              <p>7. Adhere to Web3 best practices and ethical standards.</p>
+              <p><strong>1. Be Respectful</strong>: Treat others with kindness, empathy, and respect.</p>
+              <p><strong>2. Mind your Language</strong>: The use of foul language, swear words, and all is highly prohibited.</p>
+              <p><strong>3. Avoid Self-Promotion</strong>: Don’t self-promote without the permission of the admins.</p>
+              <p><strong>4. No Irrelevant Content</strong>: Avoid posting content that is irrelevant to the community.</p>
+              <p><strong>5. Stick to The Purpose of the Group</strong>: We have some subgroups in the community, make sure to maximize their individual purposes.</p>
+              <p><strong>6. Be Authentic</strong>: Verify content before sending it to the community, to avoid scams.</p>
+              <p><strong>9. Respect Moderators</strong>: Adhere to community moderators' decisions.</p>
+              <p><strong>10. Report Misconduct</strong>: Inform moderators of any rule violations in the community and DMs.</p>
+
+              <h3 className="mt-4 text-lg font-semibold">CONSEQUENCES OF MISCONDUCT</h3>
+              <p><strong>1. Warning</strong>: First-time offenders receive a warning from moderators.</p>
+              <p><strong>2. Temporary Removal</strong>: Repeat offenders face a temporary ban from the community.</p>
+              <p><strong>3. Permanent Removal</strong>: Severe or repeated misconduct leads to a permanent ban.</p>
+
+              <h3 className="mt-4 text-lg font-semibold">ADMINISTRATION</h3>
+              <p><strong>1. Admins</strong>: Admins enforce community guidelines.</p>
+              <p><strong>2. Report Misconduct</strong>: Members can report violations of rules to the Admins.</p>
+              <p><strong>3. Appeal</strong>: Banned members can appeal to moderators for reconsideration.</p>
+              <p className="mt-4 text-center text-xl font-semibold">Keep loving JESUS!!</p>
             </div>
             <div className="flex items-center mb-4">
               <input
@@ -143,7 +155,7 @@ const Hero = () => {
               disabled={!isAgreed}
               onClick={handleAgreeAndJoin}
             >
-              Join Community
+              join community
             </button>
           </div>
         </motion.div>

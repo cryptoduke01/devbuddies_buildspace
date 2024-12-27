@@ -15,21 +15,21 @@ const LeadershipSection = () => {
 
   const leaders = [
     {
-      name: 'john doe',
-      position: 'community leader',
-      image: '/images/comm-manager.jpeg',
+      name: 'Bernard',
+      position: 'Head Of Community',
+      image: '/images/headofcomm.jpeg',
       bio: 'passionate leader committed to establishing the kingdom in web3',
     },
     {
-      name: 'jane smith',
-      position: 'head of outreach',
-      image: '/images/comm-manager.jpeg',
+      name: 'Chizzy',
+      position: 'Assistant Community Manager',
+      image: '/images/asscommger.jpeg',
       bio: 'connecting believers and fostering growth in the community.',
     },
     {
-      name: 'mike johnson',
-      position: 'education coordinator',
-      image: '/images/comm-manager.jpeg',
+      name: 'Feerkayo',
+      position: 'Head Of Content',
+      image: '/images/headofcontent.jpeg',
       bio: 'empowering members with knowledge to navigate the web3 space.',
     },
   ];

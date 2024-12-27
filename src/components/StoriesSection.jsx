@@ -27,7 +27,7 @@ const StoriesSection = () => {
     <section id="stories-section" className="bg-gradient-to-b from-[#0E0E0E] to-[#121212] py-20 px-6 sm:px-10 lg:px-12 relative">
       {/* Section Header */}
       <div className="relative z-10 max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#F0FFF0]">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F0FFF0]">
           stories <span className="text-[#83B71B]">from the community</span>
         </h2>
       </div>

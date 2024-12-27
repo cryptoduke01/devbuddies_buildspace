@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
 import EventsSection from "./components/EventsSection"
 import StoriesSection from "./components/StoriesSection"
+import MerchGallery from "./components/MerchGallery"
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <LeadershipSection />
       <EventsSection />
       <StoriesSection />
+      <MerchGallery />
       <Footer />
     </div>
   )

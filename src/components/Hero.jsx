@@ -49,18 +49,20 @@ const Hero = () => {
             Establishing God's Kingdom in Web3
           </h1>
           <p className="mb-12 text-base sm:text-lg text-white/90 leading-relaxed">
-            Regenerates is a community of believers with the mandate to establish God's Kingdom in the web3 space.
+            regenerates is a community of believers with the mandate to establish God's Kingdom in the web3 space.
           </p>
           <div className="flex flex-wrap gap-6 items-center mt-6">
             <button
               className="px-6 py-3 bg-white/90 text-black rounded-full font-normal hover:scale-105 transition-transform w-full sm:w-auto"
               onClick={handleJoinClick}
             >
-              Join Community
+              join community
             </button>
-            <button
+            <a
+              href="https://x.com/regener8s"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 border border-white text-white rounded-full font-normal hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-x-2"
-              onClick={() => (window.location.href = "/resources")}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +79,9 @@ const Hero = () => {
                 />
                 <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth={2} />
               </svg>
-              View Resources
-            </button>
+              view resources
+            </a>
+
           </div>
         </motion.div>
       </motion.div>

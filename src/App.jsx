@@ -4,7 +4,7 @@ import UpcomingEvents from './components/About'
 import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
 import EventsSection from "./components/EventsSection"
-import StoriesSection from "./components/StoriesSection"
+import StoriesSection from "./components/TestimonySection"
 
 
 const App = () => {

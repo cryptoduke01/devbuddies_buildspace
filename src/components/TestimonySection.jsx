@@ -5,7 +5,7 @@ const TestimonySection = () => {
   const testimonies = [
     {
       title: "a leap into web3 creativity",
-      author: "Ser B",
+      author: "Feekaryo",
       content:
         "“with the help of the <span className='text-[#83B71B]'>regenerates</span>, my younger sister started her web3 video creation journey. she was unsure of what to do, but someone on the team inspired her, and now she's doing amazing!”",
     },

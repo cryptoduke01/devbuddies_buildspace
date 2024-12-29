@@ -123,8 +123,8 @@ const Hero = () => {
               <p><strong>4. No Irrelevant Content</strong>: Avoid posting content that is irrelevant to the community.</p>
               <p><strong>5. Stick to The Purpose of the Group</strong>: We have some subgroups in the community, make sure to maximize their individual purposes.</p>
               <p><strong>6. Be Authentic</strong>: Verify content before sending it to the community, to avoid scams.</p>
-              <p><strong>9. Respect Moderators</strong>: Adhere to community moderators' decisions.</p>
-              <p><strong>10. Report Misconduct</strong>: Inform moderators of any rule violations in the community and DMs.</p>
+              <p><strong>7. Respect Moderators</strong>: Adhere to community moderators' decisions.</p>
+              <p><strong>8. Report Misconduct</strong>: Inform moderators of any rule violations in the community and DMs.</p>
 
               <h3 className="mt-4 text-lg font-semibold">CONSEQUENCES OF MISCONDUCT</h3>
               <p><strong>1. Warning</strong>: First-time offenders receive a warning from moderators.</p>

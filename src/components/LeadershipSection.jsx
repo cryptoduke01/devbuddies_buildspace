@@ -27,7 +27,7 @@ const LeadershipSection = () => {
       bio: 'connecting believers and fostering growth in the community.',
     },
     {
-      name: 'Feerkayo',
+      name: 'Feekaryo',
       position: 'Head Of Content',
       image: '/images/headofcontent.jpeg',
       bio: 'empowering members with knowledge to navigate the web3 space.',

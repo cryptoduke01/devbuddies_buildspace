@@ -5,8 +5,7 @@ import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
 import EventsSection from "./components/EventsSection"
 import StoriesSection from "./components/TestimonySection"
-import { Analytics } from '@vercel/analytics/next';
-
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (

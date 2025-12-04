@@ -1,10 +1,12 @@
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
-import UpcomingEvents from './components/About'
+import About from './components/About'
 import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
 import EventsSection from "./components/EventsSection"
 import StoriesSection from "./components/TestimonySection"
+import Resources from './pages/Resources'
+import { Routes, Route } from 'react-router-dom'
 import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
@@ -13,12 +15,20 @@ const App = () => {
       <Analytics />
       <Navbar />
       <main className="flex-grow">
-        <Hero />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+              <LeadershipSection />
+              <EventsSection />
+              <StoriesSection />
+            </>
+          } />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="*" element={<div className="pt-24 px-6">page not found</div>} />
+        </Routes>
       </main>
-      <UpcomingEvents />
-      <LeadershipSection />
-      <EventsSection />
-      <StoriesSection />
       <Footer />
     </div>
   )

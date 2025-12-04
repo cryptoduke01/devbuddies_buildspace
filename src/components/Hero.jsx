@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Grid from './Grid';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -58,10 +59,8 @@ const Hero = () => {
             >
               join community
             </button>
-            <a
-              href="https://x.com/regener8s"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/resources"
               className="px-6 py-3 border border-white text-white rounded-full font-normal hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-x-2"
             >
               <svg
@@ -80,7 +79,7 @@ const Hero = () => {
                 <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth={2} />
               </svg>
               view resources
-            </a>
+            </Link>
 
           </div>
         </motion.div>

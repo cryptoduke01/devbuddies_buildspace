@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
 import EventsSection from "./components/EventsSection"
 import StoriesSection from "./components/TestimonySection"
+import AnnouncementBar from "./components/AnnouncementBar"
 import Resources from './pages/Resources'
 import { Routes, Route } from 'react-router-dom'
 import { Analytics } from "@vercel/analytics/react"
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col">
       <Analytics />
+      <AnnouncementBar />
       <Navbar />
       <main className="flex-grow">
         <Routes>

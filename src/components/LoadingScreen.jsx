@@ -8,7 +8,7 @@ const LoadingScreen = ({ onComplete }) => {
     // Minimum display time for the loading screen
     const timer = setTimeout(() => {
       setIsLoading(false);
-      setTimeout(onComplete, 700); // Wait for exit animation
+      setTimeout(onComplete, 600); // Wait for exit animation
     }, 5000);
 
     return () => clearTimeout(timer);

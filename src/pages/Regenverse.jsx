@@ -8,6 +8,7 @@ import {
   isApiKeyConfigured,
   FALLBACK_DATA 
 } from '../services/opensea';
+import PageLoader from '../components/PageLoader';
 
 const Regenverse = () => {
   const VISIBLE_COUNT = 20;
@@ -22,6 +23,30 @@ const Regenverse = () => {
   const [showAll, setShowAll] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [downloading, setDownloading] = useState(false);
+
+  // Download NFT image directly to device
+  const handleDownload = async (imageUrl, name) => {
+    if (!imageUrl || downloading) return;
+    
+    setDownloading(true);
+    try {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `${name || 'regenverse-nft'}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      // Fallback: open in new tab if direct download fails (CORS)
+      window.open(imageUrl, '_blank');
+    }
+    setDownloading(false);
+  };
 
   // Fetch NFTs on mount
   useEffect(() => {
@@ -98,6 +123,7 @@ const Regenverse = () => {
   };
 
   return (
+    <PageLoader duration={2500}>
     <div className="min-h-screen bg-black pt-20 pb-16">
       {/* Header */}
       <div className="relative overflow-hidden">
@@ -390,16 +416,39 @@ const Regenverse = () => {
                   </div>
                 </div>
 
-                <a href={`https://opensea.io/assets/base/theregenverse/${selectedNft.identifier}`} target="_blank" rel="noopener noreferrer"
-                  className="block w-full py-2.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black text-sm font-semibold rounded-full text-center">
-                  View on OpenSea
-                </a>
+                <div className="flex gap-2">
+                  <a href={`https://opensea.io/assets/base/theregenverse/${selectedNft.identifier}`} target="_blank" rel="noopener noreferrer"
+                    className="flex-1 py-2.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black text-sm font-semibold rounded-full text-center">
+                    View on OpenSea
+                  </a>
+                  {selectedNft.image_url && (
+                    <button 
+                      onClick={() => handleDownload(selectedNft.image_url, selectedNft.name)}
+                      disabled={downloading}
+                      className="w-11 h-11 flex items-center justify-center bg-white/10 hover:bg-[#83B71B]/30 rounded-full transition-colors disabled:opacity-50"
+                      title="Download Image"
+                    >
+                      {downloading ? (
+                        <motion.div
+                          className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
+                          animate={{ rotate: 360 }}
+                          transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                        />
+                      ) : (
+                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                      )}
+                    </button>
+                  )}
+                </div>
               </div>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
     </div>
+    </PageLoader>
   );
 };
 

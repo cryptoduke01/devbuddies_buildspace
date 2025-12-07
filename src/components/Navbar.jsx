@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Handle scroll event
   useEffect(() => {
@@ -34,6 +36,26 @@ const Navbar = () => {
 
   const handleEmailClick = () => {
     window.open("mailto:regeneratesdao@gmail.com", "_blank", "noopener noreferrer");
+  };
+
+  // Handle navigation to section (works from any page)
+  const handleSectionClick = (sectionId) => {
+    if (location.pathname !== '/') {
+      // Navigate to home first, then scroll to section
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Already on home, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
 
@@ -71,14 +93,14 @@ const Navbar = () => {
                 {/* Desktop Nav Links - Only show on lg and above */}
                 <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
                   {['about', 'community'].map((item) => (
-                    <motion.a
+                    <motion.button
                       key={item}
-                      href={`#${item}-section`}
-                      className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B]"
+                      onClick={() => handleSectionClick(`${item}-section`)}
+                      className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B] cursor-pointer"
                     >
                       {item}
                       <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
-                    </motion.a>
+                    </motion.button>
                   ))}
                   <Link
                     to="/resources"
@@ -150,15 +172,17 @@ const Navbar = () => {
                 >
                   <div className="py-4 space-y-2">
                     {['about', 'community'].map((item) => (
-                      <motion.a
+                      <motion.button
                         key={item}
-                        href={`#${item}-section`}
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={() => {
+                          handleSectionClick(`${item}-section`);
+                          setIsMenuOpen(false);
+                        }}
                         whileHover={{ x: 10 }}
-                        className="block py-2 transition-colors text-white hover:text-[#83B71B]"
+                        className="block py-2 transition-colors text-white hover:text-[#83B71B] text-left w-full"
                       >
                         {item}
-                      </motion.a>
+                      </motion.button>
                     ))}
                     <Link
                       to="/resources"

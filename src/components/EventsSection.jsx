@@ -6,25 +6,42 @@ const EventsSection = () => {
     {
       title: "GM With Jesus",
       date: "Daily",
+      time: "08:00",
       location: "Twitter Spaces",
       description: "start your day with faith-driven prayers and conversations with insights into the web3 space",
       image: "/images/gmwithJesus.png",
+      calendarUrl: "https://twitter.com/regener8s",
     },
     {
       title: "Alpha Calls",
       date: "Fridays",
+      time: "19:00",
       location: "Whatsapp Group",
       description: "exclusive discussions on the latest alpha in web3, empowering community members.",
       image: "/images/alphacalls.png",
+      recurrence: "FREQ=WEEKLY;BYDAY=FR",
     },
     {
       title: "Prayer Meetings",
       date: "Wednesdays",
+      time: "20:00",
       location: "Whatsapp Group",
       description: "join us in heartfelt prayers, strengthening our faith and unity in the Web3 journey.",
       image: "/images/prayermeets.png",
+      recurrence: "FREQ=WEEKLY;BYDAY=WE",
     },
   ];
+
+  // Generate Google Calendar URL
+  const generateCalendarUrl = (event) => {
+    const title = encodeURIComponent(event.title + " - Regenerates");
+    const details = encodeURIComponent(event.description);
+    const location = encodeURIComponent(event.location);
+    
+    // For recurring events, we'll just open a simple reminder
+    const baseUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+    return `${baseUrl}&text=${title}&details=${details}&location=${location}`;
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -80,7 +97,7 @@ const EventsSection = () => {
                 <p className="text-sm text-gray-400 mb-4">{event.description}</p>
                 
                 {/* Event Details */}
-                <div className="text-sm text-gray-300 flex justify-between items-center">
+                <div className="text-sm text-gray-300 flex justify-between items-center mb-4">
                   <span>
                     <span className="font-semibold text-[#83B71B]">Date:</span> {event.date}
                   </span>
@@ -88,6 +105,20 @@ const EventsSection = () => {
                     <span className="font-semibold text-[#83B71B]">Location:</span> {event.location}
                   </span>
                 </div>
+
+                {/* Add to Calendar Button */}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(generateCalendarUrl(event), '_blank');
+                  }}
+                  className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/5 hover:bg-[#83B71B]/20 border border-white/10 hover:border-[#83B71B]/50 rounded-full text-xs text-gray-300 hover:text-[#83B71B] transition-all relative z-10"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  Add to Calendar
+                </button>
               </div>
 
               {/* Gradient Border on Hover */}

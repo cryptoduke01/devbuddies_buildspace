@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import PageLoader from '../components/PageLoader';
 
 export default function Resources() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <PageLoader duration={2000}>
     <div className="min-h-screen bg-black text-white pt-24 pb-16">
       {/* Background gradients */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
@@ -268,5 +270,6 @@ export default function Resources() {
         </div>
       </section>
     </div>
+    </PageLoader>
   );
 }

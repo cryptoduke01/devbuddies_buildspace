@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,51 +50,67 @@ const Navbar = () => {
           <div className="px-4 sm:px-6 lg:px-8 py-4">
             <div className="max-w-7xl mx-auto">
               <div className="flex justify-between items-center">
-                <motion.div
+                {/* Logo */}
+                <motion.a
+                  href="#"
                   whileHover={{ scale: 1.05 }}
-                  className="text-xl text-white font-semibold flex items-center"
+                  className="text-lg sm:text-xl text-white font-semibold flex items-center shrink-0"
                 >
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] rounded-full animate-spin-slow opacity-75 blur"></div>
                     <img
                       src="/images/regen.jpg"
                       alt="Regenerates Logo"
-                      className="relative w-8 h-8 mr-2 rounded-full border-2 border-[#83B71B]"
+                      className="relative w-7 h-7 sm:w-8 sm:h-8 mr-2 rounded-full border-2 border-[#83B71B]"
                     />
                   </div>
-                  regenerates
-                </motion.div>
+                  <span className="hidden sm:inline">regenerates</span>
+                </motion.a>
 
-                <div className="hidden md:flex space-x-8">
+                {/* Desktop Nav Links - Only show on lg and above */}
+                <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
                   {['about', 'community', 'events', 'testimonies'].map((item) => (
                     <motion.a
                       key={item}
                       href={`#${item}-section`}
-                      className="text-white hover:text-[#83B71B] transition-colors relative group"
+                      className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B]"
                     >
                       {item}
-                      <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] group-hover:w-full transition-all duration-300"></div>
+                      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
                     </motion.a>
                   ))}
                 </div>
 
-                <div className="hidden md:flex space-x-4">
+                {/* Desktop Action Buttons */}
+                <div className="hidden lg:flex items-center space-x-2 xl:space-x-3">
+                  {/* Regenverse Button */}
+                  <Link to="/regenverse">
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-[#83B71B]/30 transition-all duration-300"
+                    >
+                      <span className="w-2 h-2 bg-black rounded-full animate-pulse"></span>
+                      regenverse
+                    </motion.div>
+                  </Link>
+                  
                   <motion.button
                     onClick={handleEmailClick}
-                    className="px-5 py-2 relative group overflow-hidden rounded-full"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-4 py-2 text-sm text-white border border-white/30 rounded-full hover:border-[#83B71B] hover:text-[#83B71B] transition-all duration-300"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <span className="relative text-white group-hover:text-black border border-white rounded-full px-5 py-2 transition-colors">
-                      email us
-                    </span>
+                    email us
                   </motion.button>
                 </div>
 
+                {/* Mobile Menu Button */}
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="md:hidden text-white"
+                  className="lg:hidden text-white p-2"
                 >
                   {isMenuOpen ? (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,27 +131,39 @@ const Navbar = () => {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
-                  className="md:hidden"
+                  className="lg:hidden"
                 >
                   <div className="py-4 space-y-2">
                     {['about', 'community', 'events', 'testimonies'].map((item) => (
                       <motion.a
                         key={item}
                         href={`#${item}-section`}
-                        whileHover={{ x: 10, color: '#83B71B' }}
-                        className="block text-white hover:text-[#83B71B] py-2 transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                        whileHover={{ x: 10 }}
+                        className="block py-2 transition-colors text-white hover:text-[#83B71B]"
                       >
                         {item}
                       </motion.a>
                     ))}
-                    <motion.button
-                      onClick={handleEmailClick}
-                      className="block w-full text-center px-5 py-2 relative group overflow-hidden rounded-full"
+                    
+                    {/* Regenverse Button */}
+                    <Link
+                      to="/regenverse"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center gap-2 w-full py-3 mt-4 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black font-semibold rounded-full"
                     >
-                      <div className="absolute inset-0 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <span className="relative text-white group-hover:text-black border border-white rounded-full px-5 py-2 transition-colors">
-                        email us
-                      </span>
+                      <span className="w-2 h-2 bg-black rounded-full animate-pulse"></span>
+                      regenverse
+                    </Link>
+
+                    <motion.button
+                      onClick={() => {
+                        handleEmailClick();
+                        setIsMenuOpen(false);
+                      }}
+                      className="block w-full text-center py-3 text-white border border-white/30 rounded-full hover:border-[#83B71B] transition-colors"
+                    >
+                      email us
                     </motion.button>
                   </div>
                 </motion.div>

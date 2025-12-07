@@ -22,13 +22,13 @@ const LeadershipSection = () => {
     { name: 'Bernard', image: '/images/bernard.jpg' },
     { name: 'Chizzy', image: '/images/chizzy.jpg' },
     { name: 'Feekaryo', image: '/images/feekaryo.jpg' },
-    { name: 'Ser B', image: '/images/serb.jpg' },
     { name: 'Aduragbemi', image: '/images/aduragbemi.jpg' },
     { name: 'Bitbro', image: '/images/bitbro.jpg' },
     { name: 'Chinedu', image: '/images/chinedu.jpg' },
     { name: 'Favour', image: '/images/favour.jpg' },
     { name: 'Stephen', image: '/images/stephen.jpg' },
     { name: 'Vee', image: '/images/vee.jpg' },
+    { name: 'Ser B', image: '/images/serb.jpg' },
   ];
 
   // Show 2 cards per slide (5 slides total for 10 leaders)

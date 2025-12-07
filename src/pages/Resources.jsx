@@ -242,7 +242,7 @@ export default function Resources() {
 
           {/* Substack Card */}
           <motion.a
-            href="https://regenerates.substack.com"
+            href="https://substack.com/@regenerates"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}

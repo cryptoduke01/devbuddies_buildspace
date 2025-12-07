@@ -51,25 +51,26 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto">
               <div className="flex justify-between items-center">
                 {/* Logo */}
-                <motion.a
-                  href="#"
-                  whileHover={{ scale: 1.05 }}
-                  className="text-lg sm:text-xl text-white font-semibold flex items-center shrink-0"
-                >
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] rounded-full animate-spin-slow opacity-75 blur"></div>
-                    <img
-                      src="/images/regen.jpg"
-                      alt="Regenerates Logo"
-                      className="relative w-7 h-7 sm:w-8 sm:h-8 mr-2 rounded-full border-2 border-[#83B71B]"
-                    />
-                  </div>
-                  <span className="hidden sm:inline">regenerates</span>
-                </motion.a>
+                <Link to="/">
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    className="text-lg sm:text-xl text-white font-semibold flex items-center shrink-0 cursor-pointer"
+                  >
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] rounded-full animate-spin-slow opacity-75 blur"></div>
+                      <img
+                        src="/images/regen.jpg"
+                        alt="Regenerates Logo"
+                        className="relative w-7 h-7 sm:w-8 sm:h-8 mr-2 rounded-full border-2 border-[#83B71B]"
+                      />
+                    </div>
+                    <span className="hidden sm:inline">regenerates</span>
+                  </motion.div>
+                </Link>
 
                 {/* Desktop Nav Links - Only show on lg and above */}
                 <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-                  {['about', 'community', 'events', 'testimonies'].map((item) => (
+                  {['about', 'community'].map((item) => (
                     <motion.a
                       key={item}
                       href={`#${item}-section`}
@@ -79,6 +80,20 @@ const Navbar = () => {
                       <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
                     </motion.a>
                   ))}
+                  <Link
+                    to="/resources"
+                    className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B]"
+                  >
+                    resources
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
+                  </Link>
+                  <Link
+                    to="/testimonies"
+                    className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B]"
+                  >
+                    testimonies
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
+                  </Link>
                 </div>
 
                 {/* Desktop Action Buttons */}
@@ -134,7 +149,7 @@ const Navbar = () => {
                   className="lg:hidden"
                 >
                   <div className="py-4 space-y-2">
-                    {['about', 'community', 'events', 'testimonies'].map((item) => (
+                    {['about', 'community'].map((item) => (
                       <motion.a
                         key={item}
                         href={`#${item}-section`}
@@ -145,6 +160,20 @@ const Navbar = () => {
                         {item}
                       </motion.a>
                     ))}
+                    <Link
+                      to="/resources"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block py-2 transition-colors text-white hover:text-[#83B71B]"
+                    >
+                      resources
+                    </Link>
+                    <Link
+                      to="/testimonies"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block py-2 transition-colors text-white hover:text-[#83B71B]"
+                    >
+                      testimonies
+                    </Link>
                     
                     {/* Regenverse Button */}
                     <Link

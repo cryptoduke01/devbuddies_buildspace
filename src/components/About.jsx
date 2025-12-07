@@ -45,7 +45,7 @@ const AboutSection = () => {
       {/* Main Content Container */}
       <motion.div 
         style={{ opacity }}
-        className="lg:w-2/3 mx-auto relative z-10"
+        className="max-w-5xl mx-auto relative z-10"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -57,7 +57,7 @@ const AboutSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-yellow-500/10 rounded-lg blur-sm transform group-hover:scale-[1.02] transition-transform duration-500"></div>
           
           {/* Glass Content Container */}
-          <div className="relative bg-[#121212]/80 backdrop-blur-md rounded-lg overflow-hidden p-8 border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div className="relative bg-[#121212]/80 backdrop-blur-md rounded-2xl overflow-hidden p-5 sm:p-6 lg:p-8 border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-500">
             {/* Hover Gradient Border with reduced intensity */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#83B71B]/0 via-[#D9DB2A]/0 to-[#83B71B]/0 group-hover:from-[#83B71B]/10 group-hover:via-[#D9DB2A]/10 group-hover:to-[#83B71B]/10 transition-all duration-700"></div>
 
@@ -72,7 +72,7 @@ const AboutSection = () => {
 
               <motion.div 
                 variants={textVariants}
-                className="space-y-4 text-gray-400"
+                className="space-y-4 text-gray-400 text-sm sm:text-base leading-relaxed"
               >
                 <p className="transform hover:translate-x-1 transition-transform duration-500">
                   the regenerates are a budding community of believers with a mandate to establish the kingdom of GOD in the web3 space.
@@ -86,7 +86,7 @@ const AboutSection = () => {
                   we, the regenerates, believe that <span className="text-[#D9DB2A] font-medium">financial security</span> allows us to better serve GOD, and our primary mission is to empower christians in this space to fulfill this mission:
                 </p>
 
-                <ul className="list-decimal list-inside pl-4 space-y-2">
+                <ul className="list-decimal list-inside pl-2 sm:pl-4 space-y-2">
                   <li className="transform hover:translate-x-1 transition-transform duration-500">
                     to bring as many believers into wealth in the web3 space.
                   </li>

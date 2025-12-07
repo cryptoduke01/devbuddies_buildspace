@@ -4,9 +4,9 @@ import About from './components/About'
 import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
 import EventsSection from "./components/EventsSection"
-import StoriesSection from "./components/TestimonySection"
 import NFTSection from "./components/NFTSection"
 import Resources from './pages/Resources'
+import Testimonies from './pages/Testimonies'
 import Regenverse from './pages/Regenverse'
 import { Routes, Route } from 'react-router-dom'
 import { Analytics } from "@vercel/analytics/react"
@@ -25,11 +25,11 @@ const App = () => {
               <NFTSection />
               <LeadershipSection />
               <EventsSection />
-              <StoriesSection />
             </>
           } />
           <Route path="/regenverse" element={<Regenverse />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/testimonies" element={<Testimonies />} />
           <Route path="*" element={<div className="pt-24 px-6">page not found</div>} />
         </Routes>
       </main>

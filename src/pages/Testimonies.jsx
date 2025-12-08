@@ -5,49 +5,49 @@ import PageLoader from '../components/PageLoader';
 
 const testimonies = [
   {
+    name: "Chineye G.",
+    image: "/images/chinenye.jpg",
+    testimony: "She battled a serious illness for a while. During our Wednesday prayers, she requested the community to pray with her, and by the next day, God healed her."
+  },
+  {
+    name: "Jesutekevwe",
+    image: null,
+    testimony: "He had a Twitter account for a long time but didn't understand its value until the Regenerates 1 Month Challenge. Connecting with great minds transformed his mindset and pushed him to take it seriously. Today, his account has grown significantly."
+  },
+  {
+    name: "Stephen Zion",
+    image: "/images/stephen.jpg",
+    testimony: "He had not been in a community like Regenerates for a long time. The love, care and support he received here deeply impacted him."
+  },
+  {
+    name: "Dami Who?",
+    image: "/images/damiwho.jpg",
+    testimony: "She loves the Regenerates community and is grateful she joined because it has drawn her closer to God."
+  },
+  {
+    name: "The Lord's",
+    image: "/images/thelords.jpg",
+    testimony: "His major Web3 breakthrough came from a project introduced in the Regenerates community. He maximized the opportunity and it paid off."
+  },
+  {
+    name: "Vivian",
+    image: "/images/vee.jpg",
+    testimony: "She had always wanted to learn trading but lacked direction. The Regenerates 1 Month Challenge gave her the push she needed and now she trades confidently."
+  },
+  {
+    name: "Safe Sunday",
+    image: "/images/safesunday.jpg",
+    testimony: "She came to Wednesday prayers depressed and in tears, asking for the community to pray with her. From the next day, God began to turn things around and she returned the following Wednesday with joy."
+  },
+  {
+    name: "Dinma",
+    image: "/images/dimma.jpg",
+    testimony: "She got her first Web3 win through the help and guidance provided by the Regenerates community."
+  },
+  {
     name: "Feekaryo",
     image: "/images/feekaryo.jpg",
-    testimony: "With the help of the regenerates, my younger sister started her web3 video creation journey. She was unsure of what to do, but someone on the team inspired her, and now she's doing amazing!"
-  },
-  {
-    name: "Gifted",
-    image: null,
-    testimony: "The Lord led me to this space amidst confusion and uncertainty. I now realize how much I can achieve through Christ and the strength he provides."
-  },
-  {
-    name: "Duke Of Web3",
-    image: null,
-    testimony: "As soon as I joined the regenerates, I was so happy to find a community that had the same interests as me. Since then it's been a fun ride driving towards one purpose while achieving our dreams."
-  },
-  {
-    name: "Chizzy",
-    image: "/images/chizzy.jpg",
-    testimony: "Being part of this community has transformed my understanding of faith in the digital age. The support and wisdom shared here is unmatched."
-  },
-  {
-    name: "Bernard",
-    image: "/images/bernard.jpg",
-    testimony: "Regenerates taught me that web3 isn't just about money—it's about building meaningful connections and glorifying God in everything we do."
-  },
-  {
-    name: "Serb",
-    image: "/images/serb.jpg",
-    testimony: "I found my purpose here. The community pushed me to explore my gifts and use them for God's kingdom in the blockchain space."
-  },
-  {
-    name: "Bitbro",
-    image: "/images/bitbro.jpg",
-    testimony: "From a confused newbie to someone who now mentors others—this community made it possible. Forever grateful for the regenerates family."
-  },
-  {
-    name: "Chinedu",
-    image: "/images/chinedu.jpg",
-    testimony: "The morning devotions changed my life. Starting each day with GM With Jesus sessions set the right tone for my web3 journey."
-  },
-  {
-    name: "Vee",
-    image: "/images/vee.jpg",
-    testimony: "In a space full of noise, regenerates became my anchor. Real people, real faith, real growth. This is what community should be."
+    testimony: "With the help of the Regenerates, my younger sister started her web3 video creation journey. She was unsure of what to do, but someone on the team inspired her, and now she's doing amazing!"
   }
 ];
 

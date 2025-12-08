@@ -219,7 +219,7 @@ export default function Resources() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Medium Card */}
           <motion.a
-            href="https://medium.com/@regenerates"
+            href="https://medium.com/@regeneratesdao"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}

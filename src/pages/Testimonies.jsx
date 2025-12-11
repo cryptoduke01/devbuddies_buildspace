@@ -30,7 +30,7 @@ const testimonies = [
     testimony: "His major Web3 breakthrough came from a project introduced in the Regenerates community. He maximized the opportunity and it paid off."
   },
   {
-    name: "Vivian",
+    name: "Vee",
     image: "/images/vee.jpg",
     testimony: "She had always wanted to learn trading but lacked direction. The Regenerates 1 Month Challenge gave her the push she needed and now she trades confidently."
   },

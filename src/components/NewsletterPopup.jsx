@@ -11,7 +11,7 @@ const NewsletterPopup = ({ onClose }) => {
     
     // Open Substack in new tab with email pre-filled
     // This is the most reliable way since Substack doesn't have a public API
-    const substackUrl = `https://substack.com/@regenerates?email=${encodeURIComponent(email)}`;
+    const substackUrl = `https://substack.com/@theregener8s?email=${encodeURIComponent(email)}`;
     window.open(substackUrl, '_blank');
     
     setStatus('success');

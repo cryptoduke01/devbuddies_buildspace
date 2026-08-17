@@ -46,22 +46,37 @@ const Hero = () => {
         </motion.div>
 
         <motion.div className="w-full lg:w-6/12">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 text-[#83B71B]">
-            Establishing God's Kingdom in Web3
+          {/* RegenCon announcement pill */}
+          <a
+            href="#regencon-section"
+            className="group inline-flex items-center gap-2 mb-6 rounded-full border border-brand/40 bg-brand/10 pl-2 pr-4 py-1.5 text-xs sm:text-sm text-brand-mint hover:border-brand hover:bg-brand/20 transition-colors"
+          >
+            <span className="rounded-full bg-gradient-to-r from-brand to-brand-lime px-2.5 py-0.5 text-[10px] sm:text-xs font-bold text-black">
+              NEW
+            </span>
+            <span className="font-medium">RegenCon Abuja · Aug 22, 2026</span>
+            <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-brand leading-[1.05]">
+            Raising Believers Who Build With Excellence &amp; Integrity
           </h1>
-          <p className="mb-12 text-base sm:text-lg text-white/90 leading-relaxed">
-            regenerates is a community of believers with the mandate to establish God's Kingdom in the web3 space.
+          <p className="mb-10 text-base sm:text-lg text-white/90 leading-relaxed">
+            <span className="font-semibold text-brand-lime">Wealth Manifold in God's Fold.</span>{' '}
+            The Regenerates is a digital Christian community building wealth in Web3 — without spiritual compromise.
           </p>
           <div className="flex flex-wrap gap-6 items-center mt-6">
             <button
-              className="px-6 py-3 bg-white/90 text-black rounded-full font-normal hover:scale-105 transition-transform w-full sm:w-auto"
+              className="px-6 py-3 bg-white/90 text-black rounded-full font-semibold hover:scale-105 transition-transform w-full sm:w-auto"
               onClick={handleJoinClick}
             >
-              join community
+              Join Community
             </button>
             <Link
               to="/resources"
-              className="px-6 py-3 border border-white text-white rounded-full font-normal hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-x-2"
+              className="px-6 py-3 border border-white text-white rounded-full font-semibold hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-x-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +93,7 @@ const Hero = () => {
                 />
                 <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth={2} />
               </svg>
-              view resources
+              View Resources
             </Link>
 
           </div>
@@ -154,7 +169,7 @@ const Hero = () => {
               disabled={!isAgreed}
               onClick={handleAgreeAndJoin}
             >
-              join community
+              Join Community
             </button>
           </div>
         </motion.div>

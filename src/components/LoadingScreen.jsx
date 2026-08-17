@@ -9,7 +9,7 @@ const LoadingScreen = ({ onComplete }) => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       setTimeout(onComplete, 600); // Wait for exit animation
-    }, 5000);
+    }, 2200);
 
     return () => clearTimeout(timer);
   }, [onComplete]);
@@ -96,7 +96,7 @@ const LoadingScreen = ({ onComplete }) => {
               transition={{ delay: 0.4 }}
               className="text-2xl font-bold text-white mb-2"
             >
-              regenerates
+              Regenerates
             </motion.h1>
 
 
@@ -107,17 +107,7 @@ const LoadingScreen = ({ onComplete }) => {
               transition={{ delay: 0.7 }}
               className="text-gray-400 text-xs italic text-center max-w-xs"
             >
-              "In all things, <span className="text-[#83B71B]">Jesus</span> be glorified"
-            </motion.p>
-
-            {/* Tagline */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.5 }}
-              transition={{ delay: 0.9 }}
-              className="text-gray-600 text-[10px] mt-3 tracking-wider uppercase"
-            >
-              in web3 for HIS glory
+              Wealth Manifold in <span className="text-[#83B71B]">God's</span> Fold
             </motion.p>
           </div>
         </motion.div>

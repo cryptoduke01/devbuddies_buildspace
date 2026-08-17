@@ -63,43 +63,49 @@ const AboutSection = () => {
 
             {/* Content */}
             <div className="relative z-10">
-              <motion.h1 
+              <motion.h1
                 variants={textVariants}
                 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#EFFCF1] mb-6 text-center"
               >
-                about <span className="text-[#83B71B]"> the regenerates</span>
+                About <span className="text-[#83B71B]">The Regenerates</span>
               </motion.h1>
 
-              <motion.div 
+              <motion.div
                 variants={textVariants}
                 className="space-y-4 text-gray-400 text-sm sm:text-base leading-relaxed"
               >
                 <p className="transform hover:translate-x-1 transition-transform duration-500">
-                  the regenerates are a budding community of believers with a mandate to establish the kingdom of GOD in the web3 space.
+                  The Regenerates is a digital Christian community focused on wealth creation without spiritual compromise.
                 </p>
 
                 <p className="transform hover:translate-x-1 transition-transform duration-500">
-                  the vision of the <span className="text-[#D9DB2A] font-medium">regenerates</span> as given by GOD is to provide a conclave for believers in the web3 space, like a goshen in Egypt, a safe space for believers who are already in the space to learn and continue to grow with other like-minded christians.
+                  Our slogan captures it clearly: <span className="text-[#D9DB2A] font-medium">Wealth Manifold in God's Fold.</span>
                 </p>
 
+                <p className="font-semibold text-[#EFFCF1] pt-2">
+                  What's Our Mission?
+                </p>
                 <p className="transform hover:translate-x-1 transition-transform duration-500">
-                  we, the regenerates, believe that <span className="text-[#D9DB2A] font-medium">financial security</span> allows us to better serve GOD, and our primary mission is to empower christians in this space to fulfill this mission:
+                  The Regenerates exists to:
                 </p>
 
-                <ul className="list-decimal list-inside pl-2 sm:pl-4 space-y-2">
+                <ul className="list-decimal list-inside pl-2 sm:pl-4 space-y-2 marker:text-[#83B71B] marker:font-semibold">
                   <li className="transform hover:translate-x-1 transition-transform duration-500">
-                    to bring as many believers into wealth in the web3 space.
+                    Create a community where believers pursue <span className="text-[#D9DB2A] font-medium">wealth manifold</span> while remaining spiritually grounded.
                   </li>
                   <li className="transform hover:translate-x-1 transition-transform duration-500">
-                    to provide a <span className="text-[#D9DB2A] font-medium">safe space</span> for believers to learn and grow.
+                    Provide a <span className="text-[#D9DB2A] font-medium">safe space</span> to learn, grow and be empowered in Web3 and the digital economy without compromise.
                   </li>
                   <li className="transform hover:translate-x-1 transition-transform duration-500">
-                    to equip newbies in the space with the requisite knowledge to navigate the web3 space.
+                    Serve as an entry point for newcomers entering Web3, equipping them with relevant knowledge and guidance.
+                  </li>
+                  <li className="transform hover:translate-x-1 transition-transform duration-500">
+                    Build accountability among believers so no one navigates the space alone.
                   </li>
                 </ul>
 
                 <p className="font-semibold text-[#83B71B] text-center mt-6 transform hover:scale-[1.02] transition-transform duration-500">
-                  we are the regenerates, in web3 for HIS glory!
+                  Wealth Manifold in God's Fold.
                 </p>
               </motion.div>
             </div>

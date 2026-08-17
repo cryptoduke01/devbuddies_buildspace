@@ -33,7 +33,7 @@ export default function Resources() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            back to home
+            Back to Home
           </Link>
         </div>
         <div className="mt-4 sm:hidden">
@@ -41,7 +41,7 @@ export default function Resources() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            back to home
+            Back to Home
           </Link>
         </div>
       </div>
@@ -219,7 +219,7 @@ export default function Resources() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Medium Card */}
           <motion.a
-            href="https://medium.com/@regeneratesdao"
+            href="https://medium.com/@regener8s"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -244,7 +244,7 @@ export default function Resources() {
 
           {/* Substack Card */}
           <motion.a
-            href="https://substack.com/@regenerates"
+            href="https://substack.com/@theregener8s"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}

@@ -178,8 +178,8 @@ export const FALLBACK_DATA = {
     twitter_username: 'regenverse',
   },
   stats: {
-    total_supply: 75,
-    num_owners: 67,
+    total_supply: 125,
+    num_owners: 100,
     floor_price: 0.0045,
     floor_price_symbol: 'ETH',
     total_volume: 0.01,

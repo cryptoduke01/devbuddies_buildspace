@@ -150,10 +150,10 @@ const Regenverse = () => {
               </h1>
 
               <p className="text-gray-400 text-sm max-w-xl mb-2">
-                The onchain collection for members of the <span className="text-[#83B71B]">regenerates</span> community. Created with 63 NFTs representing our community members.
+                The onchain collection for members of the <span className="text-[#83B71B]">Regenerates</span> community. 125+ unique NFTs representing believers building onchain.
               </p>
               <p className="text-gray-500 text-xs mb-4 italic">
-                "In all things, Jesus be glorified" — Creating a culture of excellence for believers in web3.
+                "Wealth manifold in God's fold" — Creating a culture of excellence for believers in Web3.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -180,11 +180,11 @@ const Regenverse = () => {
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/10">
                   <span className="text-gray-400">Supply</span>
-                  <span className="text-[#83B71B] font-medium">75</span>
+                  <span className="text-[#83B71B] font-medium">125+</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/10">
                   <span className="text-gray-400">Owners</span>
-                  <span className="text-[#D9DB2A] font-medium">{stats?.num_owners || 67}</span>
+                  <span className="text-[#D9DB2A] font-medium">{stats?.num_owners || '100+'}</span>
                 </div>
                 <div className="flex justify-between py-1">
                   <span className="text-gray-400">Unique</span>

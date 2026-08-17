@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from "./components/Navbar"
 import Hero from './components/Hero'
+import RegenCon from './components/RegenCon'
 import About from './components/About'
 import Footer from "./components/Footer"
 import LeadershipSection from "./components/LeadershipSection"
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/" element={
               <>
                 <Hero />
+                <RegenCon />
                 <About />
                 <NFTSection />
                 <LeadershipSection />

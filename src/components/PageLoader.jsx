@@ -67,7 +67,7 @@ const PageLoader = ({ children, duration = 2000 }) => {
                 transition={{ delay: 0.2 }}
                 className="text-white text-sm font-medium"
               >
-                regenerates
+                Regenerates
               </motion.p>
 
               {/* Slogan */}
@@ -77,7 +77,7 @@ const PageLoader = ({ children, duration = 2000 }) => {
                 transition={{ delay: 0.4 }}
                 className="text-gray-500 text-xs mt-2 italic"
               >
-                in web3 for HIS glory
+                Wealth manifold in God's fold
               </motion.p>
             </div>
           </motion.div>

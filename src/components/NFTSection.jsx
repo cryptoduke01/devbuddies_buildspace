@@ -68,18 +68,18 @@ const NFTSection = () => {
               </h2>
 
               <p className="text-gray-400 text-xs sm:text-sm mb-4 leading-relaxed">
-                The onchain collection for <span className="text-[#83B71B]">@regener8s</span> members. 
-                <span className="text-[#D9DB2A]"> 75 unique NFTs</span> on Base — your identity in the community.
+                The onchain collection for <span className="text-[#83B71B]">@regener8s</span> members.
+                <span className="text-[#D9DB2A]"> 125+ unique NFTs</span> on Base — your identity in the community.
               </p>
 
               {/* Stats */}
               <div className="flex flex-wrap gap-4 sm:gap-5 mb-5">
                 <div>
-                  <p className="text-lg sm:text-xl font-bold text-[#83B71B]">75</p>
+                  <p className="text-lg sm:text-xl font-bold text-[#83B71B]">125+</p>
                   <p className="text-gray-500 text-[10px]">Items</p>
                 </div>
                 <div>
-                  <p className="text-lg sm:text-xl font-bold text-[#D9DB2A]">67</p>
+                  <p className="text-lg sm:text-xl font-bold text-[#D9DB2A]">100+</p>
                   <p className="text-gray-500 text-[10px]">Owners</p>
                 </div>
                 <div>

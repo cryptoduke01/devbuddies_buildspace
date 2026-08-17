@@ -96,7 +96,7 @@ export default function Testimonies() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            back to home
+            Back to Home
           </Link>
         </div>
         <div className="mt-4 sm:hidden">
@@ -104,7 +104,7 @@ export default function Testimonies() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            back to home
+            Back to Home
           </Link>
         </div>
       </div>
@@ -155,7 +155,7 @@ export default function Testimonies() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold group-hover:text-[#83B71B] transition-colors">{item.name}</h3>
-                  <p className="text-gray-500 text-xs">regenerate</p>
+                  <p className="text-gray-500 text-xs">Regenerate</p>
                 </div>
               </div>
 

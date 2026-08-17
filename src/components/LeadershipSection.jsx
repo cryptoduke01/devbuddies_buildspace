@@ -131,7 +131,7 @@ const LeadershipSection = () => {
         className="relative z-10"
       >
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-[#EFFCF1] mb-8">
-          community <span className="text-[#83B71B]">leadership</span>
+          Community <span className="text-[#83B71B]">Leadership</span>
         </h2>
 
         {/* Carousel Container */}

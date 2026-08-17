@@ -8,7 +8,7 @@ const EventsSection = () => {
       date: "Daily",
       time: "08:00",
       location: "Twitter Spaces",
-      description: "start your day with faith-driven prayers and conversations with insights into the web3 space",
+      description: "Start your day with faith-driven prayers and conversations, with insights into the Web3 space.",
       image: "/images/gmwithJesus.png",
       calendarUrl: "https://twitter.com/regener8s",
     },
@@ -17,7 +17,7 @@ const EventsSection = () => {
       date: "Fridays",
       time: "19:00",
       location: "Whatsapp Group",
-      description: "exclusive discussions on the latest alpha in web3, empowering community members.",
+      description: "Exclusive discussions on the latest alpha in Web3, empowering community members.",
       image: "/images/alphacalls.png",
       recurrence: "FREQ=WEEKLY;BYDAY=FR",
     },
@@ -26,7 +26,7 @@ const EventsSection = () => {
       date: "Wednesdays",
       time: "20:00",
       location: "Whatsapp Group",
-      description: "join us in heartfelt prayers, strengthening our faith and unity in the Web3 journey.",
+      description: "Join us in heartfelt prayers, strengthening our faith and unity in the Web3 journey.",
       image: "/images/prayermeets.png",
       recurrence: "FREQ=WEEKLY;BYDAY=WE",
     },
@@ -68,7 +68,7 @@ const EventsSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#EFFCF1] mb-8">
-          regular <span className="text-[#83B71B]">events</span>
+          Regular <span className="text-[#83B71B]">Events</span>
         </h2>
         
         {/* Events Grid */}

@@ -80,7 +80,7 @@ const NotFound = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-gray-600 text-xs mt-10 italic"
         >
-          "In all things, Jesus be glorified" — even in 404s 🙏
+          "Wealth manifold in God's fold" — even in 404s 🙏
         </motion.p>
       </div>
     </div>

@@ -34,6 +34,13 @@ const Navbar = () => {
     }
   };
 
+  // On-page section links (label + scroll target)
+  const sectionLinks = [
+    { label: 'About', section: 'about-section' },
+    { label: 'RegenCon', section: 'regencon-section' },
+    { label: 'Community', section: 'community-section' },
+  ];
+
   const handleEmailClick = () => {
     window.open("mailto:regeneratesdao@gmail.com", "_blank", "noopener noreferrer");
   };
@@ -86,19 +93,19 @@ const Navbar = () => {
                         className="relative w-7 h-7 sm:w-8 sm:h-8 mr-2 rounded-full border-2 border-[#83B71B]"
                       />
                     </div>
-                    <span className="hidden sm:inline">regenerates</span>
+                    <span className="hidden sm:inline">Regenerates</span>
                   </motion.div>
                 </Link>
 
                 {/* Desktop Nav Links - Only show on lg and above */}
                 <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-                  {['about', 'community'].map((item) => (
+                  {sectionLinks.map((item) => (
                     <motion.button
-                      key={item}
-                      onClick={() => handleSectionClick(`${item}-section`)}
+                      key={item.section}
+                      onClick={() => handleSectionClick(item.section)}
                       className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B] cursor-pointer"
                     >
-                      {item}
+                      {item.label}
                       <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
                     </motion.button>
                   ))}
@@ -106,14 +113,14 @@ const Navbar = () => {
                     to="/resources"
                     className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B]"
                   >
-                    resources
+                    Resources
                     <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
                   </Link>
                   <Link
                     to="/testimonies"
                     className="text-sm xl:text-base transition-colors relative group whitespace-nowrap text-white hover:text-[#83B71B]"
                   >
-                    testimonies
+                    Testimonies
                     <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] transition-all duration-300 w-0 group-hover:w-full"></div>
                   </Link>
                 </div>
@@ -128,17 +135,17 @@ const Navbar = () => {
                       className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black text-sm font-semibold rounded-full hover:shadow-lg hover:shadow-[#83B71B]/30 transition-all duration-300"
                     >
                       <span className="w-2 h-2 bg-black rounded-full animate-pulse"></span>
-                      regenverse
+                      Regenverse
                     </motion.div>
                   </Link>
-                  
+
                   <motion.button
                     onClick={handleEmailClick}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="px-4 py-2 text-sm text-white border border-white/30 rounded-full hover:border-[#83B71B] hover:text-[#83B71B] transition-all duration-300"
                   >
-                    email us
+                    Email Us
                   </motion.button>
                 </div>
 
@@ -171,17 +178,17 @@ const Navbar = () => {
                   className="lg:hidden"
                 >
                   <div className="py-4 space-y-2">
-                    {['about', 'community'].map((item) => (
+                    {sectionLinks.map((item) => (
                       <motion.button
-                        key={item}
+                        key={item.section}
                         onClick={() => {
-                          handleSectionClick(`${item}-section`);
+                          handleSectionClick(item.section);
                           setIsMenuOpen(false);
                         }}
                         whileHover={{ x: 10 }}
                         className="block py-2 transition-colors text-white hover:text-[#83B71B] text-left w-full"
                       >
-                        {item}
+                        {item.label}
                       </motion.button>
                     ))}
                     <Link
@@ -189,14 +196,14 @@ const Navbar = () => {
                       onClick={() => setIsMenuOpen(false)}
                       className="block py-2 transition-colors text-white hover:text-[#83B71B]"
                     >
-                      resources
+                      Resources
                     </Link>
                     <Link
                       to="/testimonies"
                       onClick={() => setIsMenuOpen(false)}
                       className="block py-2 transition-colors text-white hover:text-[#83B71B]"
                     >
-                      testimonies
+                      Testimonies
                     </Link>
                     
                     {/* Regenverse Button */}
@@ -206,7 +213,7 @@ const Navbar = () => {
                       className="flex items-center justify-center gap-2 w-full py-3 mt-4 bg-gradient-to-r from-[#83B71B] to-[#D9DB2A] text-black font-semibold rounded-full"
                     >
                       <span className="w-2 h-2 bg-black rounded-full animate-pulse"></span>
-                      regenverse
+                      Regenverse
                     </Link>
 
                     <motion.button
@@ -216,7 +223,7 @@ const Navbar = () => {
                       }}
                       className="block w-full text-center py-3 text-white border border-white/30 rounded-full hover:border-[#83B71B] transition-colors"
                     >
-                      email us
+                      Email Us
                     </motion.button>
                   </div>
                 </motion.div>
